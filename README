@@ -1,0 +1,65 @@
+=========================================
+http://localhost/watermeter/index.php
+
+or
+
+http://localhost/watermeter/
+=========================================
+create a database called : watermeterdb
+
+create the following tables : 
+	1. table : group
+
+		CREATE TABLE IF NOT EXISTS `group` (
+		  `id` int(11) NOT NULL AUTO_INCREMENT,
+		  `name` varchar(20) NOT NULL,
+		  `permissions` text NOT NULL,
+		  PRIMARY KEY (`id`)
+		)
+
+	2. table: users
+
+		CREATE TABLE IF NOT EXISTS `users` (
+		  `id` int(11) NOT NULL AUTO_INCREMENT,
+		  `username` varchar(20) NOT NULL,
+		  `password` varchar(64) NOT NULL,
+		  `salt` varchar(32) NOT NULL,
+		  `name` varchar(50) NOT NULL,
+		  `joined` datetime NOT NULL,
+		  `group` int(11) NOT NULL,
+		  PRIMARY KEY (`id`)
+		)
+
+	3. table : users_session
+
+		CREATE TABLE IF NOT EXISTS `users_session` (
+		  `id` int(11) NOT NULL AUTO_INCREMENT,
+		  `user_id` int(11) NOT NULL,
+		  `hash` varchar(64) NOT NULL,
+		  PRIMARY KEY (`id`)
+		)
+
+=========================================
+=========================================
+==================TO DO==================
+1. CREATE PROFILE PAGE
+
+2. 
+
+=========================================
+
+alert("Hello world");
+
+==========================================
+GOOGLE DEVELOPER CONSOLE LINK TO PROJECT'S DETAILS PAGE :
+https://code.google.com/apis/console/b/0/?noredirect#project:382847366055:access
+
+PACKAGE: com.aitsolutionske.mapapp
+
+GOOGLE_API_KEY: "AIzaSyC2GAJcxc7Bt6x8w50K16pbxBJJMxFl3dA"  //this is defined in classes/Message.php
+
+PROJECT ID: 382847366055 //THIS IS DEFINED IN com.aitsolutionske.mapapp.Config.java
+
+
+
+==========================================

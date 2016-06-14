@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    background-color:#EFEFEF;
+    font-family:Monaco,Consolas,'Lucida Grande','Lucida Console';
+    font-size:16px;
+    text-shadow:rgba(0,0,0,0.01) 0 0 0;
+
+}
+h1,h2,h3,h4,p,li,ul{
+    font-family: arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+/*****************header-section-formatting****************************/
+#topbar{
+    width:100%;
+    margin:0 auto;
+    background: #66CCFF;
+    height: 80px;
+    padding: 10px 0px 10px 0px;
+}
+#topbar img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background: #555;
+}
+
+#topbar h1 {
+  position: relative;
+  top: 18px;
+  left: 80px;
+}
+/*****************end of header-section-formatting****************************/
+
+.content{
+    background-color: #F5F5F0;
+    padding: 10px;
+    min-height: 315px;
+
+}
+
+.reg_form,.login_form,.update_profile_form,.change_password_form{
+    width:460px;
+    padding:20px;
+    margin:0 auto;
+    border:3px solid #DFDFDF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbd4e5));
+    background: -moz-linear-gradient(top,  #fff,  #cbd4e5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#cbd4e5');
+}
+.form_title{
+    font-size:20px;
+    
+    font-family:"Lucida Grande",Tahoma,Verdana,Arial,sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    /*text-align: center;*/
+    padding-bottom: 5px;
+}
+.reg_form div,.login_form div,.update_profile_form div,.change_password_form div{
+    width: 300px;
+    clear: left;
+    margin: 0;
+    padding: 5px 0 8px 0;
+    padding-left: 155px; /*width of left column containing the label elements*/
+    border-top: 1px dashed gray;
+    height: 1%;
+}
+
+.reg_form label,.login_form label,.update_profile_form label,.change_password_form label{
+    font-weight: bold;
+    float: left;
+    margin-left: -155px; /*width of left column*/
+    width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+.reg_button,.login_button,.update_profile_button,.change_pass_button{
+    width:auto;
+    margin:10px 0 0 2px;
+    padding:3px 4px 3px 4px;
+    color:white;
+    background-color:blue;
+    outline:none;
+    border:1px solid #006600 ; /*006600 - green*/
+    font-weight:bold;
+}
+
+.error{
+    width:460px;
+    color:#F00;
+    padding:20px;
+    margin:0 auto;
+    border:3px solid #DFDFDF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbd4e5));
+    background: -moz-linear-gradient(top,  #fff,  #cbd4e5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#cbd4e5');
+}
+#footer{
+    color:#fff;
+    padding-top:20px;
+    text-align:center;
+    background: #454546;        
+    height: 50px;
+    clear:both;
+}
+
+.clear{
+    clear: both;
+}
+
+/****************home page *******************************/
+.welcome_user_msg{
+    float:right;
+    color: #0066FF;
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
